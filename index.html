@@ -38,8 +38,12 @@ section{padding:68px 0}.section-head{margin-bottom:28px}.section-head .kicker{co
 .contact{background:var(--navy);color:white}.contact .section-head h2{color:white}.contact .section-head p{color:#d3dce4}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-card{border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:24px;background:rgba(255,255,255,.05)}.contact-card h3{margin-top:0}.mini-logo{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:7px;background:var(--orange);color:#fff;font-size:12px;letter-spacing:-.05em;margin-right:7px}.contact-card p{color:#dce4ea}.contact-form{display:grid;gap:10px}.contact-form input,.contact-form textarea,.contact-form select{width:100%;border:1px solid #d9e0e5;border-radius:9px;padding:12px;background:white;color:var(--ink)}.contact-form textarea{min-height:100px;resize:vertical}.small{font-size:12px;color:#bfcbd4}
 footer{padding:24px 0;background:#102536;color:#c8d3dc;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .floating{position:fixed;right:18px;bottom:18px;z-index:10;box-shadow:0 6px 20px #0002}
+
+/* 회사 소개 사진 갤러리 */
+.about-gallery{margin-top:34px}.about-gallery h3{margin:0 0 8px;color:var(--navy);font-size:22px}.about-gallery .gallery-intro{margin:0 0 18px;color:var(--muted);font-size:14px}.about-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.about-photo{margin:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#f7f9fa;box-shadow:0 8px 24px rgba(20,45,65,.05)}.about-photo img{display:block;width:100%;height:300px;object-fit:cover}.about-photo figcaption{padding:13px 16px;color:var(--navy);font-weight:800;font-size:14px}
+
 @media(max-width:800px){.navlinks{display:none;position:absolute;top:71px;left:0;right:0;background:white;padding:18px 5%;border-bottom:1px solid var(--line);flex-direction:column;gap:14px}.navlinks.open{display:flex}.menu{display:block}.grid,.product-grid{grid-template-columns:1fr 1fr}.capability,.contact-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr}}
-@media(max-width:520px){.hero{padding:68px 0}.grid,.product-grid{grid-template-columns:1fr}.nav{min-height:64px}.brand{font-size:21px}.brand-logo{width:40px;height:40px;object-fit:contain}section{padding:52px 0}.product-photo{height:200px}}
+@media(max-width:520px){.about-photo-grid{grid-template-columns:1fr}.about-photo img{height:230px}.hero{padding:68px 0}.grid,.product-grid{grid-template-columns:1fr}.nav{min-height:64px}.brand{font-size:21px}.brand-logo{width:40px;height:40px;object-fit:contain}section{padding:52px 0}.product-photo{height:200px}}
 </style>
 </head>
 <body>
@@ -72,6 +76,15 @@ footer{padding:24px 0;background:#102536;color:#c8d3dc;font-size:12px}.footer-in
         <article class="card"><div class="icon">🏭</div><h3>회사 및 작업장</h3><p>경남 거제시 동부면 산촌명진길 42-30, 가동 1</p></article>
         <article class="card"><div class="icon">🧰</div><h3>기계 제작·수리</h3><p>식품기계 제작·수리, 산업기계 제작·수리, 자동화기계 제작</p></article>
         <article class="card"><div class="icon">📦</div><h3>가공·제작 분야</h3><p>자동화기계, 금형·지그 제작, 선반·밀링·용접 관련 상담 분야를 소개합니다.</p></article>
+      </div>
+
+      <div class="about-gallery">
+        <h3>주안산업 사업장 소개</h3>
+        <p class="gallery-intro">주안산업의 외부 전경과 기계 작업장 모습입니다.</p>
+        <div class="about-photo-grid">
+          <figure class="about-photo"><img src="images/juan-facility-exterior.png" alt="주안산업 사업장 외부 전경" loading="lazy"><figcaption>주안산업 사업장 전경</figcaption></figure>
+          <figure class="about-photo"><img src="images/juan-machine-workshop.png" alt="주안산업 기계 작업장 내부" loading="lazy"><figcaption>기계 작업장 내부</figcaption></figure>
+        </div>
       </div>
     </div>
   </section>
